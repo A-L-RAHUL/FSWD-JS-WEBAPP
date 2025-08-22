@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
+  <div class="container">
+    <h1>Gallery</h1>
+    <div class="gallery">
+      <img src="images/img1.jpg" onclick="openModal(this.src)">
+      <img src="images/img2.jpg" onclick="openModal(this.src)">
+      <img src="images/img3.jpg" onclick="openModal(this.src)">
+      <img src="images/img4.jpg" onclick="openModal(this.src)">
+    </div>
+  </div>
+
+  <div id="modal" class="modal" onclick="closeModal()">
+    <img src="">
+  </div>
+</body>
+</html>
